@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   const { message } = await req.json();
 
+  // جواب‌های نمایشی بدون نیاز به API
   let reply = "این یک پاسخ آزمایشی از ربات پزشکی است.";
 
   if (message.includes("سلام")) {
